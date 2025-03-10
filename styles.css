@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: auto;
+    background: url(bg-mobile.svg), linear-gradient(hsl(257, 40%, 49%)40%, hsl(257, 40%, 49%));
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-position: top center;
+    width: 100%;
+    padding: 35px;
+    font-size: 18px;
+    font-family: "open sans", sans-serif;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 40%;
+    align-self: flex-start;
+}
+
+.illustration {
+    width: 100%;
+    margin: 60px 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px 0;
+    
+}
+
+.register_button {
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 30px 0 60px 0;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    box-shadow: 0px 5px 10px hsla(0, 0%, 30%, 0.5);
+}
+
+.social_links button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 2.5px;
+    background-color: hsla(257, 40%, 49%);
+    color: white;
+    border: 2px solid white;
+} 
+
+button {
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media (min-width:850px) {
+    body {
+        padding: 0 60px;
+        overflow: hidden;
+        background: url(bg-desktop.svg), linear-gradient(hsl(257, 40%, 49%)40%, hsl(257, 40%, 49%));
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin: 0;
+        max-width: none;
+        height: 100vh;
+        
+    }
+    .logo {
+        width: 200px;
+        position: absolute;
+        left: 60px;
+        top: 40px;
+    }
+
+    .illustration {
+        margin: 0;
+        width: 50%;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .social_links {
+        position: absolute;
+        bottom: 50px;
+        right: 60px;
+    }
+}
